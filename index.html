@@ -1,0 +1,731 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Garh Panchkot Eco Tourism II | Premium Eco Resort in West Bengal</title>
+    <meta name="description" content="Experience luxury amidst nature at Garh Panchkot Eco Tourism II. Premium rooms, infinity pool, spa, and dining nestled in the serene hills of Rampur, Neturia, West Bengal.">
+    <meta name="keywords" content="Garh Panchkot, Eco Tourism, Resort, West Bengal, Hotel, Pool, Spa, Nature, Rampur, Neturia">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400;0,500;0,600;0,700;1,400;1,500&family=Inter:wght@300;400;500;600;700&family=Cormorant+Garamond:ital,wght@0,300;0,400;0,500;0,600;1,300;1,400&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <!-- Preloader -->
+    <div id="preloader">
+        <div class="loader">
+            <div class="loader-ring"></div>
+            <span class="loader-text">Garh Panchkot</span>
+        </div>
+    </div>
+
+    <!-- Cursor Follower -->
+    <div class="cursor-dot" id="cursorDot"></div>
+    <div class="cursor-ring" id="cursorRing"></div>
+
+    <!-- Navigation -->
+    <nav id="navbar" class="navbar">
+        <div class="nav-container">
+            <a href="#home" class="nav-logo">
+                <span class="logo-icon">🏔️</span>
+                <div class="logo-text">
+                    <span class="logo-main">Garh Panchkot</span>
+                    <span class="logo-sub">ECO TOURISM II</span>
+                </div>
+            </a>
+            <div class="nav-links" id="navLinks">
+                <a href="#home" class="nav-link active" data-section="home">Home</a>
+                <a href="#about" class="nav-link" data-section="about">About</a>
+                <a href="#rooms" class="nav-link" data-section="rooms">Rooms</a>
+                <a href="#gallery" class="nav-link" data-section="gallery">Gallery</a>
+                <a href="#amenities" class="nav-link" data-section="amenities">Amenities</a>
+                <a href="#contact" class="nav-link" data-section="contact">Contact</a>
+                <a href="#book" class="nav-btn-book">Book Now</a>
+            </div>
+            <button class="hamburger" id="hamburger" aria-label="Toggle Menu">
+                <span></span>
+                <span></span>
+                <span></span>
+            </button>
+        </div>
+    </nav>
+
+    <!-- Hero Section -->
+    <section id="home" class="hero">
+        <div class="hero-slider">
+            <div class="hero-slide active" style="background-image: url('images/hero.png')"></div>
+            <div class="hero-slide" style="background-image: url('images/pool.png')"></div>
+            <div class="hero-slide" style="background-image: url('images/dining.png')"></div>
+            <div class="hero-slide" style="background-image: url('images/garden.png')"></div>
+        </div>
+        <div class="hero-overlay"></div>
+        <div class="hero-particles" id="particles"></div>
+        <div class="hero-content">
+            <div class="hero-badge animate-fade-up">
+                <span class="badge-star">★</span> Premium Eco Resort <span class="badge-star">★</span>
+            </div>
+            <h1 class="hero-title animate-fade-up">
+                <span class="title-line">Where Nature</span>
+                <span class="title-line accent">Meets Luxury</span>
+            </h1>
+            <p class="hero-subtitle animate-fade-up">
+                Experience the untouched beauty of Panchkot Hills — luxurious rooms, infinity pool, gourmet dining & rejuvenating spa amidst nature's paradise.
+            </p>
+            <div class="hero-actions animate-fade-up">
+                <a href="#rooms" class="btn btn-primary">
+                    <span>Explore Rooms</span>
+                    <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M5 12h14M12 5l7 7-7 7"/></svg>
+                </a>
+                <a href="#gallery" class="btn btn-outline">
+                    <span>View Gallery</span>
+                </a>
+            </div>
+            <div class="hero-info-cards animate-fade-up">
+                <div class="info-card">
+                    <div class="info-icon">📍</div>
+                    <div>
+                        <span class="info-label">Location</span>
+                        <span class="info-value">Rampur, Neturia, WB</span>
+                    </div>
+                </div>
+                <div class="info-card">
+                    <div class="info-icon">🕐</div>
+                    <div>
+                        <span class="info-label">Check-in</span>
+                        <span class="info-value">2:00 PM</span>
+                    </div>
+                </div>
+                <div class="info-card">
+                    <div class="info-icon">🕚</div>
+                    <div>
+                        <span class="info-label">Check-out</span>
+                        <span class="info-value">11:00 AM</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="hero-scroll-indicator">
+            <div class="scroll-mouse">
+                <div class="scroll-wheel"></div>
+            </div>
+            <span>Scroll to Explore</span>
+        </div>
+        <!-- Slider Controls -->
+        <div class="slider-controls">
+            <button class="slider-btn prev" id="sliderPrev" aria-label="Previous Slide">‹</button>
+            <div class="slider-dots" id="sliderDots"></div>
+            <button class="slider-btn next" id="sliderNext" aria-label="Next Slide">›</button>
+        </div>
+    </section>
+
+    <!-- About Section -->
+    <section id="about" class="about section">
+        <div class="container">
+            <div class="section-header">
+                <span class="section-tag">Discover</span>
+                <h2 class="section-title">About Our Resort</h2>
+                <div class="section-line"></div>
+            </div>
+            <div class="about-grid">
+                <div class="about-image reveal-left">
+                    <img src="images/hero.png" alt="Garh Panchkot Eco Tourism II Resort" loading="lazy">
+                    <div class="about-image-badge">
+                        <span class="badge-number">10+</span>
+                        <span class="badge-text">Years of Excellence</span>
+                    </div>
+                </div>
+                <div class="about-content reveal-right">
+                    <h3 class="about-heading">A Sanctuary of Peace & Luxury in the Heart of Nature</h3>
+                    <p class="about-text">
+                        Nestled in the serene hills of Panchkot, <strong>Garh Panchkot Eco Tourism II</strong> is a premium eco-resort that offers the perfect blend of luxury and nature. Located in Rampur, Neturia, West Bengal, our resort is surrounded by lush green forests, ancient ruins, and breathtaking landscapes.
+                    </p>
+                    <p class="about-text">
+                        Whether you're seeking a peaceful retreat, an adventure-filled getaway, or a romantic escape, our resort provides world-class amenities while preserving the pristine beauty of nature. From our infinity pool overlooking the hills to our gourmet restaurant serving local and international cuisine, every moment here is designed to be unforgettable.
+                    </p>
+                    <div class="about-features">
+                        <div class="about-feature">
+                            <div class="feature-icon">🏊</div>
+                            <span>Infinity Pool</span>
+                        </div>
+                        <div class="about-feature">
+                            <div class="feature-icon">🍽️</div>
+                            <span>Fine Dining</span>
+                        </div>
+                        <div class="about-feature">
+                            <div class="feature-icon">💆</div>
+                            <span>Luxury Spa</span>
+                        </div>
+                        <div class="about-feature">
+                            <div class="feature-icon">🌿</div>
+                            <span>Eco Friendly</span>
+                        </div>
+                        <div class="about-feature">
+                            <div class="feature-icon">🏔️</div>
+                            <span>Hill View</span>
+                        </div>
+                        <div class="about-feature">
+                            <div class="feature-icon">🅿️</div>
+                            <span>Free Parking</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Experience Strip -->
+    <section class="experience-strip">
+        <div class="strip-content">
+            <div class="strip-item">
+                <span class="strip-number" data-count="500">0</span>+
+                <span class="strip-label">Happy Guests</span>
+            </div>
+            <div class="strip-item">
+                <span class="strip-number" data-count="25">0</span>+
+                <span class="strip-label">Luxury Rooms</span>
+            </div>
+            <div class="strip-item">
+                <span class="strip-number" data-count="10">0</span>+
+                <span class="strip-label">Years Experience</span>
+            </div>
+            <div class="strip-item">
+                <span class="strip-number" data-count="4.8">0</span>
+                <span class="strip-label">Guest Rating</span>
+            </div>
+        </div>
+    </section>
+
+    <!-- Rooms Section -->
+    <section id="rooms" class="rooms section">
+        <div class="container">
+            <div class="section-header">
+                <span class="section-tag">Accommodation</span>
+                <h2 class="section-title">Our Premium Rooms</h2>
+                <div class="section-line"></div>
+                <p class="section-desc">Each room is thoughtfully designed to provide the ultimate comfort while keeping you connected with the beauty of nature.</p>
+            </div>
+            <div class="rooms-grid">
+                <!-- Standard Room -->
+                <div class="room-card reveal-up">
+                    <div class="room-image-wrapper">
+                        <img src="images/room-standard.png" alt="Standard Room" loading="lazy">
+                        <div class="room-overlay">
+                            <a href="#book" class="btn btn-primary btn-sm">Book Now</a>
+                        </div>
+                        <span class="room-tag">Popular</span>
+                    </div>
+                    <div class="room-details">
+                        <div class="room-header">
+                            <h3 class="room-name">Standard Room</h3>
+                            <div class="room-price">
+                                <span class="price-amount">₹2,999</span>
+                                <span class="price-period">/night</span>
+                            </div>
+                        </div>
+                        <p class="room-desc">Cozy and comfortable room with all essential amenities, perfect for solo travelers and couples.</p>
+                        <div class="room-amenities">
+                            <span class="room-amenity">🛏️ Twin/King Bed</span>
+                            <span class="room-amenity">❄️ AC</span>
+                            <span class="room-amenity">📺 Smart TV</span>
+                            <span class="room-amenity">📶 Free WiFi</span>
+                        </div>
+                        <div class="room-meta">
+                            <span>👥 2 Guests</span>
+                            <span>📐 250 sq ft</span>
+                            <span>🏔️ Garden View</span>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Deluxe Room -->
+                <div class="room-card featured reveal-up">
+                    <div class="room-image-wrapper">
+                        <img src="images/room-deluxe.png" alt="Deluxe Room" loading="lazy">
+                        <div class="room-overlay">
+                            <a href="#book" class="btn btn-primary btn-sm">Book Now</a>
+                        </div>
+                        <span class="room-tag bestseller">Best Seller</span>
+                    </div>
+                    <div class="room-details">
+                        <div class="room-header">
+                            <h3 class="room-name">Deluxe Hill View Room</h3>
+                            <div class="room-price">
+                                <span class="price-amount">₹4,999</span>
+                                <span class="price-period">/night</span>
+                            </div>
+                        </div>
+                        <p class="room-desc">Spacious room with stunning hill views, premium furnishings, and a private balcony to soak in the panoramic beauty.</p>
+                        <div class="room-amenities">
+                            <span class="room-amenity">🛏️ King Bed</span>
+                            <span class="room-amenity">🏔️ Hill View</span>
+                            <span class="room-amenity">🛁 Bathtub</span>
+                            <span class="room-amenity">📶 Free WiFi</span>
+                            <span class="room-amenity">☕ Mini Bar</span>
+                        </div>
+                        <div class="room-meta">
+                            <span>👥 2 Guests</span>
+                            <span>📐 400 sq ft</span>
+                            <span>🌅 Balcony</span>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Premium Suite -->
+                <div class="room-card reveal-up">
+                    <div class="room-image-wrapper">
+                        <img src="images/room-suite.png" alt="Premium Suite" loading="lazy">
+                        <div class="room-overlay">
+                            <a href="#book" class="btn btn-primary btn-sm">Book Now</a>
+                        </div>
+                        <span class="room-tag premium">Premium</span>
+                    </div>
+                    <div class="room-details">
+                        <div class="room-header">
+                            <h3 class="room-name">Premium Suite</h3>
+                            <div class="room-price">
+                                <span class="price-amount">₹7,999</span>
+                                <span class="price-period">/night</span>
+                            </div>
+                        </div>
+                        <p class="room-desc">Our finest accommodation with a separate living area, panoramic windows, premium bathroom, and exclusive room service.</p>
+                        <div class="room-amenities">
+                            <span class="room-amenity">🛏️ King Bed</span>
+                            <span class="room-amenity">🛋️ Living Area</span>
+                            <span class="room-amenity">🛁 Jacuzzi</span>
+                            <span class="room-amenity">📶 Free WiFi</span>
+                            <span class="room-amenity">🍾 Room Service</span>
+                        </div>
+                        <div class="room-meta">
+                            <span>👥 4 Guests</span>
+                            <span>📐 650 sq ft</span>
+                            <span>🌅 Panoramic View</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Fullscreen Image Gallery -->
+    <section id="gallery" class="gallery section">
+        <div class="container">
+            <div class="section-header">
+                <span class="section-tag">Visual Tour</span>
+                <h2 class="section-title">Explore Our Gallery</h2>
+                <div class="section-line"></div>
+                <p class="section-desc">Take a virtual tour of our stunning resort and its surroundings.</p>
+            </div>
+            <div class="gallery-filters">
+                <button class="filter-btn active" data-filter="all">All</button>
+                <button class="filter-btn" data-filter="rooms">Rooms</button>
+                <button class="filter-btn" data-filter="pool">Pool</button>
+                <button class="filter-btn" data-filter="dining">Dining</button>
+                <button class="filter-btn" data-filter="nature">Nature</button>
+                <button class="filter-btn" data-filter="spa">Spa</button>
+            </div>
+            <div class="gallery-grid">
+                <div class="gallery-item large" data-category="nature" data-aos="fade-up">
+                    <img src="images/hero.png" alt="Resort Exterior" loading="lazy">
+                    <div class="gallery-item-overlay">
+                        <span class="gallery-item-title">Resort Exterior</span>
+                        <span class="gallery-item-icon">🔍</span>
+                    </div>
+                </div>
+                <div class="gallery-item" data-category="rooms" data-aos="fade-up">
+                    <img src="images/room-deluxe.png" alt="Deluxe Room" loading="lazy">
+                    <div class="gallery-item-overlay">
+                        <span class="gallery-item-title">Deluxe Room</span>
+                        <span class="gallery-item-icon">🔍</span>
+                    </div>
+                </div>
+                <div class="gallery-item" data-category="pool" data-aos="fade-up">
+                    <img src="images/pool.png" alt="Infinity Pool" loading="lazy">
+                    <div class="gallery-item-overlay">
+                        <span class="gallery-item-title">Infinity Pool</span>
+                        <span class="gallery-item-icon">🔍</span>
+                    </div>
+                </div>
+                <div class="gallery-item" data-category="rooms" data-aos="fade-up">
+                    <img src="images/room-suite.png" alt="Premium Suite" loading="lazy">
+                    <div class="gallery-item-overlay">
+                        <span class="gallery-item-title">Premium Suite</span>
+                        <span class="gallery-item-icon">🔍</span>
+                    </div>
+                </div>
+                <div class="gallery-item large" data-category="dining" data-aos="fade-up">
+                    <img src="images/dining.png" alt="Restaurant" loading="lazy">
+                    <div class="gallery-item-overlay">
+                        <span class="gallery-item-title">Gourmet Restaurant</span>
+                        <span class="gallery-item-icon">🔍</span>
+                    </div>
+                </div>
+                <div class="gallery-item" data-category="spa" data-aos="fade-up">
+                    <img src="images/spa.png" alt="Spa & Wellness" loading="lazy">
+                    <div class="gallery-item-overlay">
+                        <span class="gallery-item-title">Spa & Wellness</span>
+                        <span class="gallery-item-icon">🔍</span>
+                    </div>
+                </div>
+                <div class="gallery-item" data-category="nature" data-aos="fade-up">
+                    <img src="images/garden.png" alt="Nature Trail" loading="lazy">
+                    <div class="gallery-item-overlay">
+                        <span class="gallery-item-title">Nature Garden</span>
+                        <span class="gallery-item-icon">🔍</span>
+                    </div>
+                </div>
+                <div class="gallery-item" data-category="rooms" data-aos="fade-up">
+                    <img src="images/room-standard.png" alt="Standard Room" loading="lazy">
+                    <div class="gallery-item-overlay">
+                        <span class="gallery-item-title">Standard Room</span>
+                        <span class="gallery-item-icon">🔍</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Lightbox -->
+    <div class="lightbox" id="lightbox">
+        <button class="lightbox-close" id="lightboxClose">&times;</button>
+        <button class="lightbox-prev" id="lightboxPrev">‹</button>
+        <button class="lightbox-next" id="lightboxNext">›</button>
+        <div class="lightbox-content">
+            <img src="" alt="" id="lightboxImg">
+            <div class="lightbox-caption" id="lightboxCaption"></div>
+        </div>
+    </div>
+
+    <!-- Amenities Section -->
+    <section id="amenities" class="amenities section">
+        <div class="container">
+            <div class="section-header">
+                <span class="section-tag">Facilities</span>
+                <h2 class="section-title">Resort Amenities</h2>
+                <div class="section-line"></div>
+                <p class="section-desc">Everything you need for the perfect holiday experience.</p>
+            </div>
+            <div class="amenities-grid">
+                <div class="amenity-card reveal-up">
+                    <div class="amenity-icon-wrap">
+                        <span class="amenity-icon">🏊</span>
+                    </div>
+                    <h3>Infinity Pool</h3>
+                    <p>Crystal clear infinity pool overlooking the magnificent hills with sun loungers and poolside service.</p>
+                </div>
+                <div class="amenity-card reveal-up">
+                    <div class="amenity-icon-wrap">
+                        <span class="amenity-icon">🍽️</span>
+                    </div>
+                    <h3>Multi-Cuisine Restaurant</h3>
+                    <p>Savor delicious local Bengali cuisine and international dishes prepared by our expert chefs.</p>
+                </div>
+                <div class="amenity-card reveal-up">
+                    <div class="amenity-icon-wrap">
+                        <span class="amenity-icon">💆</span>
+                    </div>
+                    <h3>Spa & Wellness</h3>
+                    <p>Rejuvenate your body and soul with our traditional and modern spa therapies.</p>
+                </div>
+                <div class="amenity-card reveal-up">
+                    <div class="amenity-icon-wrap">
+                        <span class="amenity-icon">🏔️</span>
+                    </div>
+                    <h3>Guided Trekking</h3>
+                    <p>Explore the ancient Panchkot fort ruins and beautiful nature trails with expert guides.</p>
+                </div>
+                <div class="amenity-card reveal-up">
+                    <div class="amenity-icon-wrap">
+                        <span class="amenity-icon">🔥</span>
+                    </div>
+                    <h3>Bonfire Nights</h3>
+                    <p>Enjoy cozy bonfire evenings under the stars with music and barbecue.</p>
+                </div>
+                <div class="amenity-card reveal-up">
+                    <div class="amenity-icon-wrap">
+                        <span class="amenity-icon">🎯</span>
+                    </div>
+                    <h3>Indoor Games</h3>
+                    <p>Table tennis, carrom, chess, and more for entertainment during your stay.</p>
+                </div>
+                <div class="amenity-card reveal-up">
+                    <div class="amenity-icon-wrap">
+                        <span class="amenity-icon">🚗</span>
+                    </div>
+                    <h3>Free Parking</h3>
+                    <p>Spacious complimentary parking for all guests with 24/7 security.</p>
+                </div>
+                <div class="amenity-card reveal-up">
+                    <div class="amenity-icon-wrap">
+                        <span class="amenity-icon">📶</span>
+                    </div>
+                    <h3>High-Speed WiFi</h3>
+                    <p>Stay connected with complimentary high-speed internet throughout the resort.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Testimonials -->
+    <section class="testimonials section">
+        <div class="container">
+            <div class="section-header">
+                <span class="section-tag">Reviews</span>
+                <h2 class="section-title">What Our Guests Say</h2>
+                <div class="section-line"></div>
+            </div>
+            <div class="testimonials-slider" id="testimonialSlider">
+                <div class="testimonial-track" id="testimonialTrack">
+                    <div class="testimonial-card">
+                        <div class="testimonial-stars">★★★★★</div>
+                        <p class="testimonial-text">"An absolutely magical experience! The resort is nestled perfectly in nature. The infinity pool with the hill view was breathtaking. Will definitely come back!"</p>
+                        <div class="testimonial-author">
+                            <div class="author-avatar">RP</div>
+                            <div>
+                                <strong>Rajesh Patel</strong>
+                                <span>Mumbai, Maharashtra</span>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="testimonial-card">
+                        <div class="testimonial-stars">★★★★★</div>
+                        <p class="testimonial-text">"The deluxe hill view room was stunning. Waking up to the sound of birds and the view of misty mountains was priceless. Staff was incredibly warm and helpful."</p>
+                        <div class="testimonial-author">
+                            <div class="author-avatar">SG</div>
+                            <div>
+                                <strong>Sneha Gupta</strong>
+                                <span>Kolkata, West Bengal</span>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="testimonial-card">
+                        <div class="testimonial-stars">★★★★★</div>
+                        <p class="testimonial-text">"Perfect weekend getaway from city life. The spa treatments were heavenly and the food was exceptional. The bonfire night with stargazing was the highlight!"</p>
+                        <div class="testimonial-author">
+                            <div class="author-avatar">AM</div>
+                            <div>
+                                <strong>Amit Mondal</strong>
+                                <span>Howrah, West Bengal</span>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="testimonial-card">
+                        <div class="testimonial-stars">★★★★★</div>
+                        <p class="testimonial-text">"Celebrated our anniversary here and it was pure bliss. The premium suite was luxurious, and the staff arranged a special dinner by the pool. Highly recommended!"</p>
+                        <div class="testimonial-author">
+                            <div class="author-avatar">PD</div>
+                            <div>
+                                <strong>Priya Das</strong>
+                                <span>Ranchi, Jharkhand</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="testimonial-controls">
+                    <button class="test-btn" id="testPrev">‹</button>
+                    <button class="test-btn" id="testNext">›</button>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Booking Section -->
+    <section id="book" class="booking section">
+        <div class="booking-bg" style="background-image: url('images/pool.png')"></div>
+        <div class="booking-overlay"></div>
+        <div class="container">
+            <div class="section-header light">
+                <span class="section-tag">Reservation</span>
+                <h2 class="section-title">Book Your Stay</h2>
+                <div class="section-line"></div>
+                <p class="section-desc">Reserve your perfect getaway now and experience luxury amidst nature.</p>
+            </div>
+            <form class="booking-form" id="bookingForm">
+                <div class="form-row">
+                    <div class="form-group">
+                        <label for="guestName">Full Name</label>
+                        <input type="text" id="guestName" placeholder="Enter your full name" required>
+                    </div>
+                    <div class="form-group">
+                        <label for="guestEmail">Email Address</label>
+                        <input type="email" id="guestEmail" placeholder="your@email.com" required>
+                    </div>
+                </div>
+                <div class="form-row">
+                    <div class="form-group">
+                        <label for="guestPhone">Phone Number</label>
+                        <input type="tel" id="guestPhone" placeholder="+91 XXXXX XXXXX" required>
+                    </div>
+                    <div class="form-group">
+                        <label for="roomType">Room Type</label>
+                        <select id="roomType" required>
+                            <option value="">Select Room Type</option>
+                            <option value="standard">Standard Room - ₹2,999/night</option>
+                            <option value="deluxe">Deluxe Hill View - ₹4,999/night</option>
+                            <option value="suite">Premium Suite - ₹7,999/night</option>
+                        </select>
+                    </div>
+                </div>
+                <div class="form-row">
+                    <div class="form-group">
+                        <label for="checkIn">Check-in Date</label>
+                        <input type="date" id="checkIn" required>
+                    </div>
+                    <div class="form-group">
+                        <label for="checkOut">Check-out Date</label>
+                        <input type="date" id="checkOut" required>
+                    </div>
+                </div>
+                <div class="form-row">
+                    <div class="form-group">
+                        <label for="guests">Number of Guests</label>
+                        <select id="guests">
+                            <option value="1">1 Guest</option>
+                            <option value="2" selected>2 Guests</option>
+                            <option value="3">3 Guests</option>
+                            <option value="4">4 Guests</option>
+                        </select>
+                    </div>
+                    <div class="form-group">
+                        <label for="specialRequest">Special Requests</label>
+                        <input type="text" id="specialRequest" placeholder="Any special requirements?">
+                    </div>
+                </div>
+                <button type="submit" class="btn btn-primary btn-lg btn-full">
+                    <span>Confirm Booking</span>
+                    <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M5 12h14M12 5l7 7-7 7"/></svg>
+                </button>
+                <p class="form-note">Check-in: 2:00 PM | Check-out: 11:00 AM | Free cancellation up to 48 hours before check-in</p>
+            </form>
+        </div>
+    </section>
+
+    <!-- Map & Contact Section -->
+    <section id="contact" class="contact section">
+        <div class="container">
+            <div class="section-header">
+                <span class="section-tag">Reach Us</span>
+                <h2 class="section-title">Contact & Location</h2>
+                <div class="section-line"></div>
+            </div>
+            <div class="contact-grid">
+                <div class="contact-info reveal-left">
+                    <div class="contact-card">
+                        <div class="contact-icon">📍</div>
+                        <div>
+                            <h4>Address</h4>
+                            <p>Garh Panchkot Eco Tourism II<br>Rampur, Neturia, Rampur<br>West Bengal 723121</p>
+                        </div>
+                    </div>
+                    <div class="contact-card">
+                        <div class="contact-icon">📞</div>
+                        <div>
+                            <h4>Phone</h4>
+                            <p>+91 XXXXX XXXXX</p>
+                        </div>
+                    </div>
+                    <div class="contact-card">
+                        <div class="contact-icon">✉️</div>
+                        <div>
+                            <h4>Email</h4>
+                            <p>info@garhpanchkot.com</p>
+                        </div>
+                    </div>
+                    <div class="contact-card">
+                        <div class="contact-icon">🗺️</div>
+                        <div>
+                            <h4>Plus Code</h4>
+                            <p>JPGV+W8 Rampur, West Bengal</p>
+                        </div>
+                    </div>
+                    <div class="contact-card">
+                        <div class="contact-icon">🕐</div>
+                        <div>
+                            <h4>Timings</h4>
+                            <p>Check-in: 2:00 PM<br>Check-out: 11:00 AM</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="contact-map reveal-right">
+                    <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3661.5!2d86.79!3d23.62!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x0%3A0x0!2zMjPCsDM3JzEyLjAiTiA4NsKwNDcnMjQuMCJF!5e0!3m2!1sen!2sin!4v1234567890" width="100%" height="100%" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade" title="Resort Location Map"></iframe>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="footer-wave">
+            <svg viewBox="0 0 1440 120" preserveAspectRatio="none">
+                <path d="M0,64L48,69.3C96,75,192,85,288,80C384,75,480,53,576,48C672,43,768,53,864,64C960,75,1056,85,1152,80C1248,75,1344,53,1392,42.7L1440,32L1440,120L1392,120C1344,120,1248,120,1152,120C1056,120,960,120,864,120C768,120,672,120,576,120C480,120,384,120,288,120C192,120,96,120,48,120L0,120Z" fill="currentColor"/>
+            </svg>
+        </div>
+        <div class="container">
+            <div class="footer-grid">
+                <div class="footer-brand">
+                    <div class="footer-logo">
+                        <span class="logo-icon">🏔️</span>
+                        <div>
+                            <span class="logo-main">Garh Panchkot</span>
+                            <span class="logo-sub">ECO TOURISM II</span>
+                        </div>
+                    </div>
+                    <p>Experience the perfect blend of luxury and nature in the heart of Panchkot Hills, West Bengal.</p>
+                    <div class="footer-social">
+                        <a href="#" class="social-link" aria-label="Facebook">f</a>
+                        <a href="#" class="social-link" aria-label="Instagram">📷</a>
+                        <a href="#" class="social-link" aria-label="Twitter">𝕏</a>
+                        <a href="#" class="social-link" aria-label="WhatsApp">💬</a>
+                    </div>
+                </div>
+                <div class="footer-links">
+                    <h4>Quick Links</h4>
+                    <a href="#home">Home</a>
+                    <a href="#about">About Us</a>
+                    <a href="#rooms">Our Rooms</a>
+                    <a href="#gallery">Gallery</a>
+                    <a href="#amenities">Amenities</a>
+                    <a href="#book">Book Now</a>
+                </div>
+                <div class="footer-links">
+                    <h4>Activities</h4>
+                    <a href="#">Trekking</a>
+                    <a href="#">Rock Climbing</a>
+                    <a href="#">Bird Watching</a>
+                    <a href="#">Nature Walk</a>
+                    <a href="#">Photography Tour</a>
+                    <a href="#">Bonfire Night</a>
+                </div>
+                <div class="footer-contact">
+                    <h4>Get in Touch</h4>
+                    <p>📍 Rampur, Neturia, West Bengal 723121</p>
+                    <p>📞 +91 XXXXX XXXXX</p>
+                    <p>✉️ info@garhpanchkot.com</p>
+                    <p>🕐 Check-in: 2:00 PM | Check-out: 11:00 AM</p>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <p>&copy; 2026 Garh Panchkot Eco Tourism II. All Rights Reserved.</p>
+                <div class="footer-bottom-links">
+                    <a href="#">Privacy Policy</a>
+                    <a href="#">Terms & Conditions</a>
+                    <a href="#">Refund Policy</a>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <!-- Back to Top -->
+    <button class="back-to-top" id="backToTop" aria-label="Back to Top">
+        <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><path d="M18 15l-6-6-6 6"/></svg>
+    </button>
+
+    <!-- WhatsApp Floating Button -->
+    <a href="https://wa.me/91XXXXXXXXXX?text=Hello! I'm interested in booking a room at Garh Panchkot Eco Tourism II." class="whatsapp-float" target="_blank" rel="noopener" aria-label="Chat on WhatsApp">
+        <span class="whatsapp-icon">💬</span>
+        <span class="whatsapp-text">Chat with us</span>
+    </a>
+
+    <script src="script.js"></script>
+</body>
+</html>
